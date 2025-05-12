@@ -200,6 +200,56 @@
             padding: 30px 0;
             text-align: center;
         }
+seccion-blog
+        .blog {
+    padding: 60px 0;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.blog-card {
+    background: var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.blog-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.blog-content {
+    padding: 20px;
+}
+
+.blog-content h3 {
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+.blog-date {
+    color: #777;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.blog-link {
+    display: inline-block;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+.blog-link:hover {
+    text-decoration: underline;
+}
 
         .checkbox-group {
             display: flex;
@@ -237,6 +287,7 @@
         .submit-btn:hover {
             background-color: #00a5b9;
         }
+
     </style>
 </head>
 <body>
@@ -246,6 +297,12 @@
                 <div class="logo">&lt;goikode&gt;</div>
                 <ul class="nav-links">
                     <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#formacion">Formación</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+                <ul class="nav-links">
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#blog">Blog</a></li>
                     <li><a href="#formacion">Formación</a></li>
                     <li><a href="#contacto">Contacto</a></li>
                 </ul>
@@ -312,6 +369,49 @@
                     <div class="service-content">
                         <h3>Formación Especializada</h3>
                         <p>Capacitamos a equipos mediante simulacros de incidentes y campañas de phishing controladas para fortalecer el factor humano en la seguridad.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2 class="section-title">Blog de Ciberseguridad</h2>
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://placeholder.pics/svg/300x200/00BCD4-546E7A/FFFFFF/ransomware" alt="Ransomware">
+                    </div>
+                    <div class="blog-content">
+                        <h3>Protección contra Ransomware</h3>
+                        <p class="blog-date">15 de Octubre, 2023</p>
+                        <p>Aprende las mejores prácticas para proteger tu organización contra ataques de ransomware.</p>
+                        <a href="#" class="blog-link">Leer más</a>
+                    </div>
+                </div>
+                
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://placeholder.pics/svg/300x200/00BCD4-546E7A/FFFFFF/phishing" alt="Phishing">
+                    </div>
+                    <div class="blog-content">
+                        <h3>Cómo identificar intentos de phishing</h3>
+                        <p class="blog-date">2 de Octubre, 2023</p>
+                        <p>Guía completa para reconocer y evitar caer en estafas de phishing cada vez más sofisticadas.</p>
+                        <a href="#" class="blog-link">Leer más</a>
+                    </div>
+                </div>
+                
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://placeholder.pics/svg/300x200/00BCD4-546E7A/FFFFFF/security" alt="Zero Trust">
+                    </div>
+                    <div class="blog-content">
+                        <h3>Arquitectura Zero Trust</h3>
+                        <p class="blog-date">20 de Septiembre, 2023</p>
+                        <p>Implementando el modelo de seguridad Zero Trust en tu infraestructura empresarial.</p>
+                        <a href="#" class="blog-link">Leer más</a>
                     </div>
                 </div>
             </div>
